@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mave-ng": {
+    "adpl_meta": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mave-ng",
+            "outputPath": "dist/adpl_meta",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -74,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mave-ng:build:production"
+              "browserTarget": "adpl_meta:build:production"
             },
             "development": {
-              "browserTarget": "mave-ng:build:development"
+              "browserTarget": "adpl_meta:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mave-ng:build"
+            "browserTarget": "adpl_meta:build"
           }
         },
         "test": {

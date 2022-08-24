@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'mave-ng'`, () => {
+  it(`should have as title 'adpl_meta'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('mave-ng');
+    expect(app.title).toEqual('adpl_meta');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('mave-ng app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('adpl_meta app is running!');
   });
 });
