@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/mave-ng'),
+      dir: require('path').join(__dirname, './coverage/adpl_meta'),
       subdir: '.',
       reporters: [
         { type: 'html' },
