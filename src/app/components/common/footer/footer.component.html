@@ -1,7 +1,13 @@
 <!-- Footer -->
 <div
     class="footer-area"
-    [ngClass]="{'style-two': router.url === '/index-3' || router.url === '/gaming-metaverse' || router.url === '/features' || router.url === '/blog'}"
+    [ngClass]="{
+        'style-two':
+            router.url === '/index-3' ||
+            router.url === '/gaming-metaverse' ||
+            router.url === '/features' ||
+            router.url === '/blog'
+    }"
 >
     <div class="container">
         <div class="row align-items-center justify-content-center">
@@ -9,16 +15,15 @@
                 <div class="single-footer">
                     <ul>
                         <li>
-                            <a routerLink="/about-us">About Us</a>
+                            <a routerLink="/contact-us">Contact Us</a>
                         </li>
                         <li>
-                            <a routerLink="/projects">Ecosystem</a>
+                            <a routerLink="/team"
+                                >Team</a
+                            >
                         </li>
                         <li>
-                            <a routerLink="/project-details">Projects</a>
-                        </li>
-                        <li>
-                            <a routerLink="/blog">Roadmap</a>
+                            <a routerLink="/privacy-policy">Privacy Policy</a>
                         </li>
                     </ul>
                 </div>
@@ -26,7 +31,7 @@
             <div class="col-lg-2 col-md-2">
                 <div class="single-footer logo">
                     <a routerLink="/">
-                        <img src="assets/images/white-logo.png" alt="logo">
+                        <h5 class="mb-0">ADPL</h5>
                     </a>
                 </div>
             </div>
@@ -37,28 +42,58 @@
                             <span>Follow Us On:</span>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/ADPLLLP/" target="_blank">
-                                <img src="assets/images/icon/icon-8.svg" alt="facebook">
+                            <a
+                                href="https://www.facebook.com/ADPLLLP/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="assets/images/icon/icon-8.svg"
+                                    alt="facebook"
+                                />
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/Accounting_dp" target="_blank">
-                                <img src="assets/images/icon/icon-9.svg" alt="twitter">
+                            <a
+                                href="https://twitter.com/Accounting_dp"
+                                target="_blank"
+                            >
+                                <img
+                                    src="assets/images/icon/icon-9.svg"
+                                    alt="twitter"
+                                />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/channel/UCNJWreWlLJU5QsluwiQAxjQ" target="_blank">
-                                <img src="assets/images/icon/icon-10.svg" alt="youtube">
+                            <a
+                                href="https://www.youtube.com/channel/UCNJWreWlLJU5QsluwiQAxjQ"
+                                target="_blank"
+                            >
+                                <img
+                                    src="assets/images/icon/icon-10.svg"
+                                    alt="youtube"
+                                />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/company/adplllp/mycompany/" target="_blank">
-                                <img src="assets/images/icon/icon-11.svg" alt="linkedin">
+                            <a
+                                href="https://www.linkedin.com/company/adplllp/mycompany/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="assets/images/icon/icon-11.svg"
+                                    alt="linkedin"
+                                />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/adplllp/" target="_blank">
-                                <img src="assets/images/icon/instagram.svg" alt="instagram">
+                            <a
+                                href="https://www.instagram.com/adplllp/"
+                                target="_blank"
+                            >
+                                <img
+                                    src="assets/images/icon/instagram.svg"
+                                    alt="instagram"
+                                />
                             </a>
                         </li>
                     </ul>
@@ -66,7 +101,11 @@
             </div>
         </div>
     </div>
-    <img src="assets/images/footer-shape.png" class="footer-shape" alt="footer-shape">
+    <img
+        src="assets/images/footer-shape.png"
+        class="footer-shape"
+        alt="footer-shape"
+    />
 </div>
 
 <!-- Copyright -->

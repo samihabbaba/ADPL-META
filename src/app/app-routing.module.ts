@@ -26,30 +26,31 @@ import { NftCentricMetaverseLandingComponent } from './components/pages/single-p
 const routes: Routes = [
 
     // Multi-page
-    {path: '', component: MetavarseLaunchpadComponent},
-    {path: 'index-2', component: DexOfferingComponent},
-    {path: 'index-3', component: GamingMetaverseComponent},
-    {path: 'index-4', component: NftCentricMetaverseComponent},
-    {path: 'index-5', component: LandSellingPlatformComponent},
+    { path: '', pathMatch: 'full', redirectTo: 'home' },
+    //  {path: '', component: MetavarseLaunchpadComponent},
+    // {path: 'index-2', component: DexOfferingComponent},
+    // {path: 'index-3', component: GamingMetaverseComponent},
+    // {path: 'index-4', component: NftCentricMetaverseComponent},
+    {path: 'home', component: LandSellingPlatformComponent},
 
     // Single Page
-    {path: 'metavarse-launchpad', component: MetavarseLaunchpadLandingComponent},
-    {path: 'dex-offering', component: DexOfferingLandingComponent},
-    {path: 'gaming-metaverse', component: GamingMetaverseLandingComponent},
-    {path: 'nft-centric-metaverse', component: NftCentricMetaverseLandingComponent},
-    {path: 'land-selling-platform', component: LandSellingPlatformLandingComponent},
+    // {path: 'metavarse-launchpad', component: MetavarseLaunchpadLandingComponent},
+    // {path: 'dex-offering', component: DexOfferingLandingComponent},
+    // {path: 'gaming-metaverse', component: GamingMetaverseLandingComponent},
+    // {path: 'nft-centric-metaverse', component: NftCentricMetaverseLandingComponent},
+    // {path: 'land-selling-platform', component: LandSellingPlatformLandingComponent},
 
     // Inner Pages
-    {path: 'about-us', component: AboutPageComponent},
+    // {path: 'about-us', component: AboutPageComponent},
     {path: 'team', component: TeamPageComponent},
-    {path: 'features', component: FeaturesPageComponent},
-    {path: 'feature-details', component: FeatureDetailsPageComponent},
-    {path: 'projects', component: ProjectsPageComponent},
-    {path: 'project-details', component: ProjectDetailsPageComponent},
-    {path: 'blog', component: BlogPageComponent},
-    {path: 'blog-details', component: BlogDetailsPageComponent},
+    // {path: 'features', component: FeaturesPageComponent},
+    // {path: 'feature-details', component: FeatureDetailsPageComponent},
+    // {path: 'projects', component: ProjectsPageComponent},
+    // {path: 'project-details', component: ProjectDetailsPageComponent},
+    // {path: 'blog', component: BlogPageComponent},
+    // {path: 'blog-details', component: BlogDetailsPageComponent},
     {path: 'privacy-policy', component: PrivacyPolicyPageComponent},
-    {path: 'terms-conditions', component: TermsConditionsPageComponent},
+    // {path: 'terms-conditions', component: TermsConditionsPageComponent},
     {path: 'contact-us', component: ContactPageComponent},
     // Here add new pages component
 
