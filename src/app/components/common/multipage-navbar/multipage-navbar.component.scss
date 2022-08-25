@@ -2,7 +2,7 @@
 .navbar-area {
     background-color: #140c2d;
     z-index: 3;
-    
+
     &.sticky-box-shadow {
         top: 0;
         left: 0;
@@ -21,6 +21,10 @@
             left: 30px;
             right: 30px;
         };
+    }
+    .img{
+        height:30px;
+        width: 60px;
     }
     .navbar {
         padding: 0;
@@ -177,11 +181,11 @@
                             left: -100%;
                             margin-top: 0;
                             visibility: hidden;
-                            
+
                             .nav-item {
                                 .nav-link {
                                     color: var(--whiteColor);
-                                    
+
                                     &::after {
                                         width: 0;
                                         bottom: 0;
@@ -200,11 +204,11 @@
                                     opacity: 0;
                                     right: 100%;
                                     visibility: hidden;
-        
+
                                     .nav-item {
                                         .nav-link {
                                             color: var(--whiteColor);
-                                            
+
                                             &::after {
                                                 width: 0;
                                                 bottom: 0;
@@ -212,7 +216,7 @@
                                             }
                                             &:hover, &.active {
                                                 color: var(--whiteColor);
-        
+
                                                 &::after {
                                                     width: 100%;
                                                 }
@@ -223,11 +227,11 @@
                                             opacity: 0;
                                             right: 100%;
                                             visibility: hidden;
-                
+
                                             .nav-item {
                                                 .nav-link {
                                                     color: var(--whiteColor);
-                                                    
+
                                                     &::after {
                                                         width: 0;
                                                         bottom: 0;
@@ -235,7 +239,7 @@
                                                     }
                                                     &:hover, &.active {
                                                         color: var(--whiteColor);
-                
+
                                                         &::after {
                                                             width: 100%;
                                                         }
@@ -486,7 +490,7 @@
                     li {
                         display: inline-block;
                         margin-right: 5px;
-            
+
                         a {
                             background-color: rgba(255, 255, 255, 0.2);
                             color: var(--whiteColor);
@@ -497,7 +501,7 @@
                             display: block;
                             height: 35px;
                             width: 35px;
-            
+
                             i {
                                 left: 0;
                                 right: 0;
@@ -770,17 +774,17 @@
     .sidebarModal {
         .modal-dialog {
             width: 100%;
-    
+
             .modal-content {
                 .modal-body {
                     padding: 30px 15px;
-    
+
                     .instagram-list {
                         margin-top: 0;
                     }
                     .sidebar-contact-info {
                         margin-top: 30px;
-    
+
                         h2 {
                             font-size: 20px;
                         }
@@ -1118,7 +1122,7 @@
             .navbar {
                 .logo-center {
                     margin-bottom: -35px;
-                    
+
                     img {
                         width: 115px;
                     }
