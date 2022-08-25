@@ -51,7 +51,7 @@
                         </li>
                         <li>
                             <span>Email:</span>
-                            <a href="mailto:admin@accountingdirectplus.com"
+                            <a href="mailto:admin@adplmeta.com"
                                 >admin@adplmeta.com</a
                             >
                         </li>
@@ -83,11 +83,17 @@
         </div>
         <div class="contact-form">
             <form>
-                <div class="row">
+                <div class="row" [formGroup]="form">
                     <div class="col-lg-6 col-md-6">
                         <div class="form-group">
                             <label>Full Name</label>
                             <input
+                                [ngClass]="{
+                                    error:
+                                        !formValid &&
+                                        !form.get('fullName')?.value
+                                }"
+                                formControlName="fullName"
                                 type="text"
                                 name="name"
                                 id="name"
@@ -101,6 +107,13 @@
                         <div class="form-group">
                             <label>Email</label>
                             <input
+                                [ngClass]="{
+                                    error:
+                                        !formValid &&
+                                        (form.get('email')?.hasError('email') ||
+                                            !form.get('email')?.value)
+                                }"
+                                formControlName="email"
                                 type="email"
                                 name="email"
                                 id="email"
@@ -114,6 +127,11 @@
                         <div class="form-group">
                             <label>Phone</label>
                             <input
+                                [ngClass]="{
+                                    error:
+                                        !formValid && !form.get('phone')?.value
+                                }"
+                                formControlName="phone"
                                 type="text"
                                 name="phone_number"
                                 id="phone_number"
@@ -127,6 +145,12 @@
                         <div class="form-group">
                             <label>Subject</label>
                             <input
+                                [ngClass]="{
+                                    error:
+                                        !formValid &&
+                                        !form.get('subject')?.value
+                                }"
+                                formControlName="subject"
                                 type="text"
                                 name="msg_subject"
                                 id="msg_subject"
@@ -140,6 +164,12 @@
                         <div class="form-group">
                             <label>Your Message</label>
                             <textarea
+                                [ngClass]="{
+                                    error:
+                                        !formValid &&
+                                        !form.get('message')?.value
+                                }"
+                                formControlName="message"
                                 name="message"
                                 class="form-control"
                                 id="message"
@@ -155,6 +185,7 @@
                             <div class="form-group">
                                 <div class="form-check">
                                     <input
+                                        formControlName="agree"
                                         name="gridCheck"
                                         value="I agree to the terms and privacy policy."
                                         class="form-check-input"
@@ -167,9 +198,7 @@
                                         for="gridCheck"
                                     >
                                         I agree to the
-                                        <a routerLink="/terms-conditions"
-                                            >Terms & Conditions</a
-                                        >
+                                        <a>Terms & Conditions</a>
                                         and
                                         <a routerLink="/privacy-policy"
                                             >Privacy Policy</a
@@ -180,7 +209,11 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12">
-                        <button type="submit" class="default-btn">
+                        <button
+                            type="button"
+                            class="default-btn"
+                            (click)="onSubmit()"
+                        >
                             Send Message
                         </button>
                     </div>

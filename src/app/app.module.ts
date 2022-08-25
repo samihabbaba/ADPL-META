@@ -54,6 +54,8 @@ import { ProjectDetailsPageComponent } from './components/pages/inner-pages/proj
 import { MultipageNavbarComponent } from './components/common/multipage-navbar/multipage-navbar.component';
 import { TeamPageComponent } from './components/pages/inner-pages/team-page/team-page.component';
 import { OnepageNavbarComponent } from './components/common/onepage-navbar/onepage-navbar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
     declarations: [
@@ -112,6 +114,9 @@ import { OnepageNavbarComponent } from './components/common/onepage-navbar/onepa
         BrowserAnimationsModule,
         StickyNavModule,
         TabsModule,
+        FormsModule,
+        ReactiveFormsModule,
+        ToastrModule.forRoot(),
         NgxSmartModalModule.forRoot()
     ],
     providers: [],
