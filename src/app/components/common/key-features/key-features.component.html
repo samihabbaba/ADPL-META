@@ -2,7 +2,9 @@
 <div
     id="features"
     class="key-features-area pt-120 pb-90 bg-140c2dr"
-    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/dex-offering'}"
+    [ngClass]="{
+        'd-none': router.url === '/index-2' || router.url === '/dex-offering'
+    }"
 >
     <div class="container">
         <div class="section-title">
@@ -12,62 +14,80 @@
         <div class="row">
             <div class="col-lg-4 col-sm-6">
                 <div class="single-features">
-                    <img src="assets/images/icon/icon-1.svg" alt="icon">
+                    <img src="assets/images/icon/icon-1.svg" alt="icon" />
                     <h3>
-                        <a routerLink="/feature-details">Session Recording</a>
+                        <a routerLink="/contact-us"> Session Recording </a>
                     </h3>
-                    <p>Visit a session again to perform further quality checks or to control the small details.</p>
-                    <a routerLink="/feature-details" class="read-more">READ MORE</a>
+                    <p>
+                        Visit a session again to perform further quality checks
+                        or to control the small details.
+                    </p>
+                    <a routerLink="/contact-us" class="read-more">READ MORE</a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <div class="single-features">
-                    <img src="assets/images/icon/icon-2.svg" alt="icon">
+                    <img src="assets/images/icon/icon-2.svg" alt="icon" />
                     <h3>
-                        <a routerLink="/feature-details">360° Capture</a>
-                    </h3>
-                    <p>Using 360° technology, guests have an unobstructed view of a remote location.</p>
-                    <a routerLink="/feature-details" class="read-more">READ MORE</a>
+                        <a routerLink="/contact-us"> 360° Capture </a>
+                    </h3>>
+                    <p>
+                        Using 360° technology, guests have an unobstructed view
+                        of a remote location.
+                    </p>
+                    <a routerLink="/contact-us" class="read-more">READ MORE</a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <div class="single-features">
-                    <img src="assets/images/icon/icon-3.svg" alt="icon">
+                    <img src="assets/images/icon/icon-3.svg" alt="icon" />
                     <h3>
-                        <a routerLink="/feature-details">20 Guest Capacity</a>
+                        <a routerLink="/contact-us"> 20 Guest Capacity </a>
                     </h3>
-                    <p>A meeting session can include up to 20 visitors from any location.</p>
-                    <a routerLink="/feature-details" class="read-more">READ MORE</a>
+                    <p>
+                        A meeting session can include up to 20 visitors from any
+                        location.
+                    </p>
+                    <a routerLink="/contact-us" class="read-more">READ MORE</a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <div class="single-features">
-                    <img src="assets/images/icon/icon-4.svg" alt="icon">
+                    <img src="assets/images/icon/icon-4.svg" alt="icon" />
                     <h3>
-                        <a routerLink="/feature-details">Viewing Autonomy</a>
+                        <a routerLink="/contact-us"> Viewing Autonomy </a>
                     </h3>
-                    <p>Encourage openness and trust by allowing your visitors to select their own point of view.</p>
-                    <a routerLink="/feature-details" class="read-more">READ MORE</a>
+                    <p>
+                        Encourage openness and trust by allowing your visitors
+                        to select their own point of view.
+                    </p>
+                    <a routerLink="/contact-us" class="read-more">READ MORE</a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <div class="single-features">
-                    <img src="assets/images/icon/icon-5.svg" alt="icon">
+                    <img src="assets/images/icon/icon-5.svg" alt="icon" />
                     <h3>
-                        <a routerLink="/feature-details">Document Collaboration</a>
+                        <a routerLink="/contact-us"> Document Collaboration </a>
                     </h3>
-                    <p>Easily pull up a checklist or document to align on purpose and collaborate in real-time.</p>
-                    <a routerLink="/feature-details" class="read-more">READ MORE</a>
+                    <p>
+                        Easily pull up a checklist or document to align on
+                        purpose and collaborate in real-time.
+                    </p>
+                    <a routerLink="/contact-us" class="read-more">READ MORE</a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
                 <div class="single-features">
-                    <img src="assets/images/icon/icon-6.svg" alt="icon">
+                    <img src="assets/images/icon/icon-6.svg" alt="icon" />
                     <h3>
-                        <a routerLink="/feature-details">High-Resolution</a>
+                        <a routerLink="/contact-us"> High-Resolution </a>
                     </h3>
-                    <p>Meeting sessions are in 4K with video stabilization for a fluid viewing experience.</p>
-                    <a routerLink="/feature-details" class="read-more">READ MORE</a>
+                    <p>
+                        Meeting sessions are in 4K with video stabilization for
+                        a fluid viewing experience.
+                    </p>
+                    <a routerLink="/contact-us" class="read-more">READ MORE</a>
                 </div>
             </div>
         </div>
@@ -78,7 +98,9 @@
 <div
     id="features"
     class="key-features-area pt-120 pb-90 d-none"
-    [ngClass]="{'d-block': router.url === '/index-2' || router.url === '/dex-offering'}"
+    [ngClass]="{
+        'd-block': router.url === '/index-2' || router.url === '/dex-offering'
+    }"
 >
     <div class="container">
         <div class="section-title">
@@ -87,79 +109,81 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-sm-6">
-                <div class="single-features style-two">
-                    <div class="d-flex align-items-center">
-                        <img src="assets/images/icon/icon-1.svg" alt="icon">
-                        <h3 class="ms-3">
-                            <a routerLink="/feature-details">Fueling The Metaverse</a>
-                        </h3>
-                    </div>
-                    <p>The Metaverse Is The Next Generation Of The Internet. As One Of Its Earliest Explorers.</p>
-                    <a routerLink="/feature-details" class="read-more">READ MORE</a>
+                <div class="single-features">
+                    <img src="assets/images/icon/icon-1.svg" alt="icon" />
+                    <h3>Session Recording</h3>
+                    <p>
+                        Visit a session again to perform further quality checks
+                        or to control the small details.
+                    </p>
+                    <a routerLink="/contact-us" class="read-more">READ MORE</a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <div class="single-features style-two">
-                    <div class="d-flex align-items-center">
-                        <img src="assets/images/icon/icon-2.svg" alt="icon">
-                        <h3 class="ms-3">
-                            <a routerLink="/feature-details">Interconnected Eco</a>
-                        </h3>
-                    </div>
-                    <p>The Metaverse Is The Next Generation Of The Internet. As One Of Its Earliest Explorers.</p>
-                    <a routerLink="/feature-details" class="read-more">READ MORE</a>
+                <div class="single-features">
+                    <img src="assets/images/icon/icon-2.svg" alt="icon" />
+                    <h3>360° Capture</h3>
+                    <p>
+                        Using 360° technology, guests have an unobstructed view
+                        of a remote location.
+                    </p>
+                    <a routerLink="/contact-us" class="read-more">READ MORE</a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <div class="single-features style-two">
-                    <div class="d-flex align-items-center">
-                        <img src="assets/images/icon/icon-3.svg" alt="icon">
-                        <h3 class="ms-3">
-                            <a routerLink="/feature-details">Non-fungible assets</a>
-                        </h3>
-                    </div>
-                    <p>The Metaverse Is The Next Generation Of The Internet. As One Of Its Earliest Explorers.</p>
-                    <a routerLink="/feature-details" class="read-more">READ MORE</a>
+                <div class="single-features">
+                    <img src="assets/images/icon/icon-3.svg" alt="icon" />
+                    <h3>20 Guest Capacity</h3>
+                    <p>
+                        A meeting session can include up to 20 visitors from any
+                        location.
+                    </p>
+                    <a routerLink="/contact-us" class="read-more">READ MORE</a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <div class="single-features style-two">
-                    <div class="d-flex align-items-center">
-                        <img src="assets/images/icon/icon-4.svg" alt="icon">
-                        <h3 class="ms-3">
-                            <a routerLink="/feature-details">Incubation</a>
-                        </h3>
-                    </div>
-                    <p>The Metaverse Is The Next Generation Of The Internet. As One Of Its Earliest Explorers.</p>
-                    <a routerLink="/feature-details" class="read-more">READ MORE</a>
+                <div class="single-features">
+                    <img src="assets/images/icon/icon-4.svg" alt="icon" />
+                    <h3>Viewing Autonomy</h3>
+                    <p>
+                        Encourage openness and trust by allowing your visitors
+                        to select their own point of view.
+                    </p>
+                    <a routerLink="/contact-us" class="read-more">READ MORE</a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <div class="single-features style-two">
-                    <div class="d-flex align-items-center">
-                        <img src="assets/images/icon/icon-5.svg" alt="icon">
-                        <h3 class="ms-3">
-                            <a routerLink="/feature-details">Initial Metaverse Offer</a>
-                        </h3>
-                    </div>
-                    <p>The Metaverse Is The Next Generation Of The Internet. As One Of Its Earliest Explorers.</p>
-                    <a routerLink="/feature-details" class="read-more">READ MORE</a>
+                <div class="single-features">
+                    <img src="assets/images/icon/icon-5.svg" alt="icon" />
+                    <h3>Document Collaboration</h3>
+                    <p>
+                        Easily pull up a checklist or document to align on
+                        purpose and collaborate in real-time.
+                    </p>
+                    <a routerLink="/contact-us" class="read-more">READ MORE</a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <div class="single-features style-two">
-                    <div class="d-flex align-items-center">
-                        <img src="assets/images/icon/icon-6.svg" alt="icon">
-                        <h3 class="ms-3">
-                            <a routerLink="/feature-details">Next Tier Projects</a>
-                        </h3>
-                    </div>
-                    <p>The Metaverse Is The Next Generation Of The Internet. As One Of Its Earliest Explorers.</p>
-                    <a routerLink="/feature-details" class="read-more">READ MORE</a>
+                <div class="single-features">
+                    <img src="assets/images/icon/icon-6.svg" alt="icon" />
+                    <h3>High-Resolution</h3>
+                    <p>
+                        Meeting sessions are in 4K with video stabilization for
+                        a fluid viewing experience.
+                    </p>
+                    <a routerLink="/contact-us" class="read-more">READ MORE</a>
                 </div>
             </div>
         </div>
     </div>
-    <img src="assets/images/features-shape-1.png" class="shape shape-1" alt="shape">
-	<img src="assets/images/features-shape-2.png" class="shape shape-2" alt="shape">
+    <img
+        src="assets/images/features-shape-1.png"
+        class="shape shape-1"
+        alt="shape"
+    />
+    <img
+        src="assets/images/features-shape-2.png"
+        class="shape shape-2"
+        alt="shape"
+    />
 </div>

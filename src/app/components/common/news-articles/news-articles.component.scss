@@ -25,6 +25,9 @@
 		transform: translateY(-5px);
 	}
 }
+.read-more{
+    border: none;
+}
 
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
@@ -64,7 +67,7 @@
         .blog-content {
             padding-left: 30px;
             margin-top: 20px;
-    
+
             span {
                 margin-bottom: 12px;
             }
@@ -84,7 +87,7 @@
         .blog-content {
             padding-left: 30px;
             margin-top: 20px;
-    
+
             h3 {
                 font-size: 22px;
             }

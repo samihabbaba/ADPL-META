@@ -11,5 +11,8 @@ export class NewsArticlesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  Click(){
+    window.open("https://worldef.net/etkinlikler/istanbul/",'_blank')
+  }
 
 }
