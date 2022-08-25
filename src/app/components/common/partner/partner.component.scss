@@ -22,6 +22,7 @@
 	padding: 80px 100px 40px;
 	border-radius: 10px;
     text-align: center;
+    
 
     .partner-item {
         margin-bottom: 40px;
@@ -42,7 +43,7 @@
     }
     .partner-inner {
         padding: 60px 15px 30px;
-    
+
         .partner-item {
             margin-bottom: 30px;
         }
@@ -62,7 +63,7 @@
     }
     .partner-inner {
         padding: 80px 30px 50px;
-    
+
         .partner-item {
             margin-bottom: 30px;
         }
@@ -85,7 +86,7 @@
 
 /* Min width 1200px to Max width 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    
+
     .partner-wrap {
         padding: 60px 20px;
         margin-top: -70px;
