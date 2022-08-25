@@ -22,22 +22,23 @@ export class ContactPageComponent implements OnInit {
         phone: new FormControl('', [Validators.required]),
         subject: new FormControl('', [Validators.required]),
         message: new FormControl('', [Validators.required]),
-        agree: new FormControl(false),
+        // agree: new FormControl(false),
     });
     constructor(private fb: FormBuilder, private toastr: ToastrService) {}
 
     ngOnInit(): void {}
 
     onSubmit() {
+        console.log(this.form)
         if (this.form.valid) {
             const form = this.form.getRawValue();
             this.formValid = true;
             Email.send({
                 Host: 'smtp.elasticemail.com',
-                Username: 'adplmeta@gmail.com',
-                Password: 'FA356E64CA6A9C0D33BD9D4F76EAE2536676',
-                To: 'adplmeta@gmail.com',
-                From: 'adplmeta@gmail.com',
+                Username: 'sami@iasyougo.com',
+                Password: 'C20AC0EB10CE23FE1557655E6643D5CE616F',
+                To: 'sami@iasyougo.com',
+                From: 'sami@iasyougo.com',
                 Subject: form.subject,
                 Body: `<b>Full Name: </b>${form.fullName} <br /> <b>Email: </b>${form.email}<br /> <b>Phone: </b>${form.phone}<br /> <b>Message:</b> <br /> ${form.message} <br><br> <b>~End of Message.~</b> `,
             }).then((message: any) => {
